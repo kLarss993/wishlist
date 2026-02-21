@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Курси програмування</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/style.css') }}">
+</head>
+<body>
+
+    <h1>НАВЧАЛЬНІ КУРСИ</h1>
+
+    <p>
+        На цій сторінці ви можете переглянути курси з програмування, які доступні для навчання
+    </p>
+
+    <!-- КОНТЕЙНЕР З КУРСАМИ -->
+    <div class="courses">
+
+        <div class="course">
+            <img src="{{ url_for('static', filename='images/python.png') }}" alt="Python">
+            <h2>Програмування</h2>
+            <p>Технологія: Python</p>
+            <p>Рівень: Середній</p>
+            <button>Купити</button>
+        </div>
+
+        <div class="course">
+            <img src="{{ url_for('static', filename='images/html.png') }}" alt="HTML">
+            <h2>Верстка</h2>
+            <p>Технологія: HTML / CSS</p>
+            <p>Рівень: Середній</p>
+            <button>Купити</button>
+        </div>
+
+        <div class="course">
+            <img src="{{ url_for('static', filename='images/sql.png') }}" alt="SQL">
+            <h2>Бази даних</h2>
+            <p>Технологія: SQL</p>
+            <p>Рівень: Початковий</p>
+            <button>Купити</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
